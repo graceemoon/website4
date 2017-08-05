@@ -1,5 +1,7 @@
 body, html {
 	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Quicksand', sans-serif;*/
 }
 
 nav {
@@ -9,6 +11,7 @@ nav {
 	margin-left: 0;
 	height: 100vh;
 	padding: 20px;
+	letter-spacing: 3px;
 }
 
 .menu {
@@ -16,9 +19,16 @@ nav {
 	margin-top: 30vh;
 	list-style-type: none;
 }
+.menu li {
+	padding: 5px;
+}
 
 .submenu {
 	list-style-type: none;
+	padding-top: 3px;
 	padding-left: 10px;
 	margin: 0;
+}
+.submenu li {
+	padding: 4px;
 }
