@@ -2,6 +2,7 @@ body, html {
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
 	/*font-family: 'Quicksand', sans-serif;*/
+	color: #101010;
 }
 
 .landing {
@@ -41,24 +42,41 @@ body, html {
 	background-color: black;
 }*/
 /*when clicked, landing will fade and move to z-index 0*/
-
+.remove-landing {
+	animation: fadeout 1s ease;
+}
+@keyframes fadeout {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
 
 nav {
 	position: fixed;
-	background-color: green;
+	background-color: rgba(0,0,0,.1);
 	margin-top: 0;
 	margin-left: 0;
 	height: 100%;
 	padding: 20px;
 	letter-spacing: 3px;
 	z-index: 10;
+	/*width: 13%;*/
+	width: 185px;
+}
+a {
+	text-decoration: none;
+	color: #101010;
+}
+a:hover {
+	color: #aeaeae;
 }
 .menu-logo {
+	font-family: 'Quicksand',sans-serif;
 	text-align: center;
+	padding-top: 20vh;
 }
 .menu {
 	padding: 20px;
-	margin-top: 30vh;
+	margin-top: 0vh;
 	list-style-type: none;
 	font-size: 14px;
 }
@@ -73,9 +91,47 @@ nav {
 	margin: 0;
 	font-size: 12px;
 }
+
 .submenu li {
 	padding: 4px;
 }
-.sublist {
+/*.sublist {
 	font-weight: 600;
+}*/
+/*.sublist > ul > li  {
+	padding: 10px 0;
+	list-style-type: none;
+	border-bottom: 1px solid #101010;
+}*/
+.sublist > ul {
+	padding: 0;
+}
+
+.subsubmenu > li  {
+	padding: 10px 0;
+	list-style-type: none;
+	border-bottom: 1px solid #101010;
+}
+
+
+
+/*ABOUT*/
+.about {
+	background-color: blue;
+	text-align: center;
+	padding: 100px;
+	padding-top: 35vh;
+	margin-left: 185px;
+	/*height: 50vh;*/
+}
+
+
+
+
+
+footer {
+	position: fixed;
+	margin-bottom: 0%;
+	/*margin-bottom: 0px;*/
+	
 }
