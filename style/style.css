@@ -12,7 +12,7 @@ body, html {
 	background-color: blue;
 	z-index: 11;
 	text-align: center;
-	padding-top: 30vh;
+	padding-top: 30vhx;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 40px;
 }
@@ -43,7 +43,8 @@ body, html {
 }*/
 /*when clicked, landing will fade and move to z-index 0*/
 .remove-landing {
-	animation: fadeout 1s ease;
+	opacity: 1;
+	animation: fadeout 1s ease forwards;
 }
 @keyframes fadeout {
 	0% {opacity: 1;}
@@ -62,6 +63,13 @@ nav {
 	/*width: 13%;*/
 	width: 185px;
 }
+nav li ul {
+	display: none;
+}
+nav > li > a:hover, nav > li > a.open {
+	background-color: #6985b5;
+}
+
 a {
 	text-decoration: none;
 	color: #101010;
@@ -85,6 +93,7 @@ a:hover {
 }
 
 .submenu {
+	display: none;
 	list-style-type: none;
 	padding-top: 3px;
 	padding-left: 10px;
