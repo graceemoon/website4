@@ -1,5 +1,5 @@
 body {
-	background-color: #aeaeae;
+	background-color: orange;
 	font-family: 'Open-Sans', 'Helvetica', sans-serif;
 	margin: 0;
 }
@@ -47,12 +47,15 @@ nav {
 	position: fixed;
 	/*width: 80px;*/
 	height: 100vh;
-	background-color: black;
+	/*background-color: black;*/
 	right: 0;
 	/*text-align: center;*/
 }
 nav div:nth-child(-n+2) {
-	font-size: 30px;
+	margin-right: -60px;
+	margin-top: 115px;
+	margin-bottom: 80px;
+	font-size: 40px;
     -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg); 
     transform: rotate(90deg);
@@ -60,8 +63,19 @@ nav div:nth-child(-n+2) {
 /*  width: 120px;
     height: 80px;*/
 	font-weight: 800;
-    background-color: orange;
+    /*background-color: orange;*/
 }
+
+nav div:first-child {
+	/*margin-top: 150px;*/
+}
+nav div:nth-child(2) {
+	margin-top: 150px;
+}
+
+
+
+
 
 .social-media {
 	position: absolute;
@@ -71,21 +85,16 @@ nav div:nth-child(-n+2) {
 	width: 150px;
 	padding-bottom: 10px;
 	text-align: center;
+	font-size: 20px;
 }
 .social-media a {
 	padding: 10px;
 }
 
-/*nav div:first-child {
-	margin-top: 100px;
-}
-nav div:nth-child(2) {
-	margin-top: 100px;
-}*/
 
 a {
 	text-decoration: none;
-	color: blue;
+	color: black;
 }
 a:hover {
 	color: orange;
@@ -94,19 +103,36 @@ a:hover {
 .container {
 	display: inline-block;
 	height: 100vh;
+	width: 100%
+	overflow: auto;
 }
 
 
 .about-page {
 	height: 100vh;
 	width: 100vw;
-	background-color: orange;
+	background-color: #fafafa;
+	text-align: center;
+}
+.about-box p{
+	padding: 50px 300px 300px 300px;
+	text-align: left;
+}
+.placeholder {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	margin-top: 180px
 }
 
 .projects-page {
 	height: 100vh;
 	width: 100vw;
 	background-color: blue;
+}
+.projects-box {
+
 }
 
 p {
