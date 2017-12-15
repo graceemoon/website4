@@ -4,36 +4,6 @@ body {
 	margin: 0;
 }
 
-/*.page-frame {
-	z-index: 0;
-	background-color: orange;
-}
-.top-frame,  {
-	width: 100vw;
-	height: 100px;
-	position: absolute;
-	top: 0;
-}
-.bottom-frame {
-	position: absolute;
-	width: 100vw;
-	height: 100px;
-	bottom: 0;
-}
-
-.left-frame,  {
-	width: 100px;
-	height: 100vh;
-	position: absolute;
-	left: 0;
-}
-.right-frame {
-	position: absolute;
-	width: 100px;
-	height: 100vh;
-	right: 0;
-}*/
-
 
 
 .menu-logo{
@@ -43,6 +13,32 @@ body {
 	position: fixed;
 	margin: 25px;
 }
+.menu-logo span {
+	font-family: 'Quicksand';
+	font-weight: 400;
+	font-size: 20px;
+	z-index: 99;
+	color: #ff8500;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	position: relative;
+	transform: rotate(-45deg);
+    /*-webkit-transform:rotate(-45deg);*/
+    /*margin-left: -11px;*/
+    animation: the-e 1s;
+    animation-fill-mode: forwards;
+	transform-origin: 45% 58%;
+}
+
+
+
+
+
+
+
+
+
 nav {
 	/*padding: 30px;*/
 	position: fixed;
